@@ -5,7 +5,6 @@ from ..db import db
 
 bp = Blueprint("books_bp", __name__, url_prefix="/books")
 
-# post one book
 @bp.post("")
 def create_book():
     request_body = request.get_json()
